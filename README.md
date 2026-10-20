@@ -8,7 +8,7 @@ Example:
 
 This client-side JavaScript web application provides real-time weather updates for cities worldwide. It simplifies accessing weather information through an intuitive mobile-first interface, allowing users to input a city name and receive data on temperature, humidity, and conditions.
 
-Developed for the [Course Name] course, applying User-Centred Design practices, agile project management processes, integrating a weather API, and Firebase backend services.
+Developed for the 1800 Projects 1 course, applying User-Centred Design practices, agile project management processes, integrating a weather API, and Firebase backend services.
 
 ---
 
