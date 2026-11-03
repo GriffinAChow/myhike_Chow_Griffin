@@ -134,7 +134,14 @@ async function displayCardsDynamically() {
       newcard.querySelector(".card-text").textContent =
         hike.details || `Located in ${hike.city}.`;
       newcard.querySelector(".card-length").textContent = hike.length;
-      newcard.querySelector(".card-image").src = `./images/${hike.code}.jpg`;
+      const cardImage = newcard.querySelector(".card-image");
+      if (hike.image) {
+        cardImage.src = hike.image; // uploaded photo (base64 text)
+      } else if (hike.code) {
+        cardImage.src = `./images/${hike.code}.jpg`; // seeded hike
+      } else {
+        cardImage.src = "./images/default.jpg"; // no photo → placeholder
+      }
 
       // Add the link with the document ID
       newcard.querySelector(".read-more").href =
